@@ -62,12 +62,13 @@ onBeforeMount(async () => {
 
 <template>
     <div class="counter-container">
-        <h1 class="counter-text" style="font-size: 3em;">Counter Game</h1>
+        <h1 style="font-size: 3em; color: #f00; font-weight: bold;">Counter Game</h1>
         <button class="counter-button" @click="connect()">Connect Wallet</button>
         <button class="counter-button" @click="disconnect()">Disconnect Wallet</button>
         <button class="counter-button circular-button" @click="click()">Click</button>
         <p class="counter-text">Your Clicks: {{ count }}</p>
         <p class="counter-text">Global Clicks: {{ gcount }}</p>
+        <p>Only "Martian" Wallet Is Supported</p>
     </div>
 </template>
 
